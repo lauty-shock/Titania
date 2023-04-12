@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  height: 100vh;
+  gap: 17%;
+  padding: 18px 0;
+}
+.container .card {
+  width: 30%;
+  position: relative;
+}
+.container .card img {
+  width: 100%;
+  height: 98%;
+}
+.container .card h2 {
+  display: inline-block;
+  color: #fffff3;
+  position: relative;
+  margin-bottom: 6px;
+}
+.container .card h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 2px;
+  background: #fffff3;
+}
+.container .card button {
+  position: absolute;
+  cursor: pointer;
+  bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 35px;
+}
+
+/*# sourceMappingURL=Marcas.module.css.map */

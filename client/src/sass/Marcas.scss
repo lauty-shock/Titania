@@ -1,0 +1,45 @@
+@import "mixins";
+@import "colors";
+
+.container {
+  @include d-flex($content: center);
+  width: 100%;
+  height: 100vh;
+  gap: 17%;
+  padding: 18px 0;
+
+  .card {
+    width: 30%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 98%;
+    }
+
+    h2 {
+      display: inline-block;
+      color: $white;
+      position: relative;
+      margin-bottom: 6px;
+    }
+    h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 2px;
+      width: 100%;
+      height: 2px;
+      background: $white;
+    }
+    button {
+      position: absolute;
+      cursor: pointer;
+      bottom: 10px;
+      border: none;
+      border-radius: 8px;
+      width: 100px;
+      height: 35px;
+    }
+  }
+}

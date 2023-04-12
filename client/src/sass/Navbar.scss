@@ -1,0 +1,98 @@
+@import "colors";
+@import "mixins";
+
+.containerNavbar {
+  @include d-flex(row, space-between, center);
+  background-color: $black;
+  border-bottom: solid 1px $gray;
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+
+  img {
+    height: 40px;
+  }
+  .search {
+    position: relative;
+    color: $black;
+    width: 50%;
+    height: 40px;
+
+    input {
+      outline: none;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      height: 100%;
+      padding: 0 50px 0 10px;
+    }
+    ::placeholder {
+      color: $black;
+    }
+    span {
+      position: absolute;
+      right: 10px;
+      top: 1px;
+      color: $black;
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+    }
+  }
+  .containerLinks {
+    @include d-flex($item: center);
+    height: 100%;
+
+    .link {
+      @include d-flex(column, space-between, center);
+      position: relative;
+      color: $white;
+      font-size: 36px;
+      line-height: 40px;
+      width: 85px;
+      height: 65%;
+
+      span {
+        font-size: 12px;
+        line-height: 16px;
+      }
+      ul {
+        @include d-flex($direction: column, $item: center);
+        display: none;
+        position: absolute;
+        bottom: -60px;
+        background-color: $black;
+        width: 85px;
+        height: 60px;
+        gap: 7px;
+        padding: 9px 0;
+
+        a {
+          color: $white;
+          text-decoration: none;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+    :hover {
+      ul {
+        display: flex;
+      }
+    }
+  }
+}
+.containerOptions {
+  @include d-flex($content: center, $item: center);
+  background-color: $black;
+  color: $white;
+  gap: 50px;
+  width: 100%;
+  height: 50px;
+
+  span {
+    @include d-flex($item:center);
+    .arrow {
+      margin-top: 2px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 79.5vh;
+}
+.container .arrowLeft,
+.container .arrowRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+.container .arrowLeft {
+  left: 10px;
+}
+.container .arrowRight {
+  right: 10px;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container div {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  gap: 8px;
+}
+.container div .button,
+.container div .buttonActive {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.container div .buttonActive {
+  border: 2px solid #fffff3;
+  cursor: auto;
+}
+
+/*# sourceMappingURL=Landing.module.css.map */

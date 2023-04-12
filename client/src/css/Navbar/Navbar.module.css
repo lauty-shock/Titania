@@ -1,0 +1,108 @@
+.containerNavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000003;
+  border-bottom: solid 1px #333335;
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+}
+.containerNavbar img {
+  height: 40px;
+}
+.containerNavbar .search {
+  position: relative;
+  color: #000003;
+  width: 50%;
+  height: 40px;
+}
+.containerNavbar .search input {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  padding: 0 50px 0 10px;
+}
+.containerNavbar .search ::placeholder {
+  color: #000003;
+}
+.containerNavbar .search span {
+  position: absolute;
+  right: 10px;
+  top: 1px;
+  color: #000003;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.containerNavbar .containerLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+.containerNavbar .containerLinks .link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: #fffff3;
+  font-size: 36px;
+  line-height: 40px;
+  width: 85px;
+  height: 65%;
+}
+.containerNavbar .containerLinks .link span {
+  font-size: 12px;
+  line-height: 16px;
+}
+.containerNavbar .containerLinks .link ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: none;
+  position: absolute;
+  bottom: -60px;
+  background-color: #000003;
+  width: 85px;
+  height: 60px;
+  gap: 7px;
+  padding: 9px 0;
+}
+.containerNavbar .containerLinks .link ul a {
+  color: #fffff3;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+}
+.containerNavbar .containerLinks :hover ul {
+  display: flex;
+}
+
+.containerOptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #000003;
+  color: #fffff3;
+  gap: 50px;
+  width: 100%;
+  height: 50px;
+}
+.containerOptions span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.containerOptions span .arrow {
+  margin-top: 2px;
+}
+
+/*# sourceMappingURL=Navbar.module.css.map */
