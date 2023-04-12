@@ -1,0 +1,67 @@
+@import "mixins";
+@import "colors";
+
+.card {
+  @include d-flex($direction: column);
+  width: 22%;
+  border-radius: 8px;
+  background-color: $dark-gray;
+  position: relative;
+  padding-bottom: 5px;
+
+  img {
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+  }
+  .price {
+    position: absolute;
+    top: 225px;
+    padding: 0 5px;
+    background-color: $dark-gray;
+    color: $white;
+  }
+  .title {
+    margin: 8px 10px;
+    font-size: 1.2rem;
+    color: $white;
+  }
+  span {
+    margin-left: 10px;
+    color: $light-gray;
+  }
+  .colors {
+    display: none;
+    width: 100%;
+    height: 50px;
+    gap: 1px;
+
+    img {
+      height: 100%;
+      width: 20%;
+      border-radius: 0%;
+      object-fit: cover;
+      position: relative;
+
+      &:hover {
+        border-bottom: 4px solid black;
+      }
+    }
+  }
+  &:hover {
+    border: 1px solid $white;
+    .price {
+      border-radius: 8px 0 0 0;
+      padding: 5px;
+      top: 0px;
+      left: 0;
+      background-color: $dark-gray;
+      color: $white;
+    }
+    .colors {
+      @include d-flex($direction: row);
+    }
+  }
+}

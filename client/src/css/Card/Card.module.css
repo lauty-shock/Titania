@@ -1,0 +1,69 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 22%;
+  border-radius: 8px;
+  background-color: rgb(41, 41, 41);
+  position: relative;
+  padding-bottom: 5px;
+}
+.card img {
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+}
+.card .price {
+  position: absolute;
+  top: 225px;
+  padding: 0 5px;
+  background-color: rgb(41, 41, 41);
+  color: #fffff1;
+}
+.card .title {
+  margin: 8px 10px;
+  font-size: 1.2rem;
+  color: #fffff1;
+}
+.card span {
+  margin-left: 10px;
+  color: rgb(158, 158, 158);
+}
+.card .colors {
+  display: none;
+  width: 100%;
+  height: 50px;
+  gap: 1px;
+}
+.card .colors img {
+  height: 100%;
+  width: 20%;
+  border-radius: 0%;
+  object-fit: cover;
+  position: relative;
+}
+.card .colors img:hover {
+  border-bottom: 4px solid black;
+}
+.card:hover {
+  border: 1px solid #fffff1;
+}
+.card:hover .price {
+  border-radius: 8px 0 0 0;
+  padding: 5px;
+  top: 0px;
+  left: 0;
+  background-color: rgb(41, 41, 41);
+  color: #fffff1;
+}
+.card:hover .colors {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+/*# sourceMappingURL=Card.module.css.map */
