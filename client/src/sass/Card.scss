@@ -3,11 +3,12 @@
 
 .card {
   @include d-flex($direction: column);
-  width: 22%;
+  width: 250px;
   border-radius: 8px;
   background-color: $dark-gray;
   position: relative;
   padding-bottom: 5px;
+  margin-bottom: 50px;
 
   img {
     width: 100%;
@@ -18,7 +19,7 @@
   }
   .price {
     position: absolute;
-    top: 225px;
+    top: 226px;
     padding: 0 5px;
     background-color: $dark-gray;
     color: $white;
@@ -51,7 +52,8 @@
     }
   }
   &:hover {
-    border: 1px solid $white;
+    box-shadow: 0 0 2px $white2;
+    margin-bottom: 0px;
     .price {
       border-radius: 8px 0 0 0;
       padding: 5px;
