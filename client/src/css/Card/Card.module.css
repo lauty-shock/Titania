@@ -3,11 +3,12 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  width: 22%;
+  width: 250px;
   border-radius: 8px;
   background-color: rgb(41, 41, 41);
   position: relative;
   padding-bottom: 5px;
+  margin-bottom: 50px;
 }
 .card img {
   width: 100%;
@@ -18,7 +19,7 @@
 }
 .card .price {
   position: absolute;
-  top: 225px;
+  top: 226px;
   padding: 0 5px;
   background-color: rgb(41, 41, 41);
   color: #fffff1;
@@ -49,7 +50,8 @@
   border-bottom: 4px solid black;
 }
 .card:hover {
-  border: 1px solid #fffff1;
+  box-shadow: 0 0 2px #eceff1;
+  margin-bottom: 0px;
 }
 .card:hover .price {
   border-radius: 8px 0 0 0;

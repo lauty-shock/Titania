@@ -12,15 +12,15 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  border: 2px solid rgba(255, 255, 255, 0.4);
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.2);
-  font-size: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.4);
   color: rgba(255, 255, 255, 0.4);
+  font-size: 2rem;
+  background-color: transparent;
   cursor: pointer;
+  position: absolute;
 }
 .container .arrowLeft {
   left: 10px;
@@ -36,20 +36,20 @@
 .container div {
   display: flex;
   position: absolute;
-  bottom: 0px;
-  gap: 8px;
+  bottom: 2px;
+  gap: 5px;
 }
 .container div .button,
 .container div .buttonActive {
-  width: 17px;
-  height: 17px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   border: none;
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 .container div .buttonActive {
-  border: 2px solid #fffff3;
+  background-color: rgba(255, 255, 255, 0.5);
   cursor: auto;
 }
 
