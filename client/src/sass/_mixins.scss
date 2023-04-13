@@ -4,3 +4,21 @@
   justify-content: $content;
   align-items: $item;
 }
+
+@mixin buttonArrow() {
+  @include d-flex(row, center, center);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin title() {
+  color: $white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
+}
