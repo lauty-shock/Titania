@@ -4,7 +4,6 @@
 .card {
   @include d-flex($direction: column);
   width: 250px;
-  border-radius: 8px;
   background-color: $dark-gray;
   position: relative;
   padding-bottom: 5px;
@@ -14,7 +13,6 @@
     width: 100%;
     height: 245px;
     object-fit: cover;
-    border-radius: 8px 8px 0 0;
     position: relative;
   }
   .price {
@@ -52,10 +50,8 @@
     }
   }
   &:hover {
-    box-shadow: 0 0 2px $white2;
     margin-bottom: 0px;
     .price {
-      border-radius: 8px 0 0 0;
       padding: 5px;
       top: 0px;
       left: 0;

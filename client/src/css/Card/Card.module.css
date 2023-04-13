@@ -4,7 +4,6 @@
   justify-content: flex-start;
   align-items: stretch;
   width: 250px;
-  border-radius: 8px;
   background-color: rgb(41, 41, 41);
   position: relative;
   padding-bottom: 5px;
@@ -14,7 +13,6 @@
   width: 100%;
   height: 245px;
   object-fit: cover;
-  border-radius: 8px 8px 0 0;
   position: relative;
 }
 .card .price {
@@ -50,11 +48,9 @@
   border-bottom: 4px solid black;
 }
 .card:hover {
-  box-shadow: 0 0 2px #eceff1;
   margin-bottom: 0px;
 }
 .card:hover .price {
-  border-radius: 8px 0 0 0;
   padding: 5px;
   top: 0px;
   left: 0;

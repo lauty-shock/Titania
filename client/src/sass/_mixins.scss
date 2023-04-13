@@ -1,3 +1,5 @@
+@import "colors";
+
 @mixin d-flex($direction: row, $content: flex-start, $item: stretch) {
   display: flex;
   flex-direction: $direction;
@@ -7,12 +9,9 @@
 
 @mixin buttonArrow() {
   @include d-flex(row, center, center);
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 2rem;
+  border: none;
+  color: $white2;
+  font-size: 2.5rem;
   background-color: transparent;
   cursor: pointer;
 }

@@ -143,8 +143,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Landing />
-      <Carrusel product={zapas} title="NOVEDADES" />
-      <Carrusel product={buzos} />
+      <Carrusel product={zapas} title="PARA HOMBRES" />
+      <Carrusel product={zapas} title="PARA MUJERES" />
     </div>
   );
 }

@@ -8,9 +8,7 @@ export default function Carrusel({ product, title }) {
   const arrayProduct = product.map((p, index) => {
     return { ...p, productId: index };
   });
-
   const [activeIndex, setActiveIndex] = useState(0);
-
   const handlePrev = () => {
     setActiveIndex(
       activeIndex === 0 ? arrayProduct.length - 4 : activeIndex - 1
@@ -24,18 +22,22 @@ export default function Carrusel({ product, title }) {
 
   return (
     <div className={css.container}>
-      {title && <h1>{title}</h1>}
+      <div className={css.header}>
+        <h1>{title}</h1>
+        <div>
+          <button onClick={handlePrev}>
+            <IoIosArrowBack />
+          </button>
+          <button onClick={handleNext}>
+            <IoIosArrowForward />
+          </button>
+        </div>
+      </div>
 
       <div className={css.conatinerCards}>
-        <button onClick={handlePrev}>
-          <IoIosArrowBack />
-        </button>
         {arrayProduct.slice(activeIndex, activeIndex + 4).map((card) => (
           <Card key={card.productId} product={card} />
         ))}
-        <button onClick={handleNext}>
-          <IoIosArrowForward />
-        </button>
       </div>
     </div>
   );
