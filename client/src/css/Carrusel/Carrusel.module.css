@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+}
+.container h1 {
+  color: #fffff1;
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
+}
+.container .conatinerCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.container .conatinerCards button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Carrusel.module.css.map */

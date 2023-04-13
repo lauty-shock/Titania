@@ -1,0 +1,21 @@
+@import "mixins";
+@import "colors";
+
+.container {
+  @include d-flex($direction: column, $item: center);
+  width: 100%;
+  padding: 10px 20px;
+
+  h1 {
+    @include title();
+  }
+
+  .conatinerCards {
+    @include d-flex(row, space-around, center);
+    width: 100%;
+
+    button {
+      @include buttonArrow();
+    }
+  }
+}
