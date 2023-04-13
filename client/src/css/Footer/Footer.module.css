@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #000003;
+  width: 100%;
+  height: 21vh;
+  margin-top: 20px;
+  padding: 17px 3vw;
+}
+.container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+.container div h4 {
+  color: #eceff1;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.container div a {
+  color: #eceff1;
+  text-decoration: none;
+  cursor: pointer;
+}
+.container div .containerRedes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+}
+.container div .containerRedes a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #eceff1;
+  font-size: 1.3rem;
+}
+.container div .containerRedes a:nth-child(1):hover {
+  background-color: #ee200b;
+}
+.container div .containerRedes a:nth-child(2):hover {
+  background-color: #2374e1;
+}
+.container div .containerRedes a:nth-child(3):hover {
+  background-color: #1d9bf0;
+}
+
+/*# sourceMappingURL=Footer.module.css.map */

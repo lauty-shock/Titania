@@ -2,6 +2,7 @@ import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import Carrusel from "./components/Carrusel";
 import Marcas from "./components/Marcas";
+import Footer from "./components/Footer";
 
 function App() {
   const zapas = [
@@ -147,6 +148,7 @@ function App() {
       <Marcas />
       <Carrusel product={zapas} title="PARA HOMBRES" />
       <Carrusel product={zapas} title="PARA MUJERES" />
+      <Footer />
     </div>
   );
 }
