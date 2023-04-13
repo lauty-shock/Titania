@@ -1,44 +1,57 @@
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 2vw;
+  margin-top: 20px;
+}
+.container .marca {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: stretch;
-  width: 100%;
-  height: 100vh;
-  gap: 17%;
-  padding: 18px 0;
-}
-.container .card {
-  width: 30%;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
   position: relative;
-}
-.container .card img {
-  width: 100%;
-  height: 98%;
-}
-.container .card h2 {
-  display: inline-block;
-  color: #fffff3;
-  position: relative;
-  margin-bottom: 6px;
-}
-.container .card h2::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 2px;
-  width: 100%;
-  height: 2px;
-  background: #fffff3;
-}
-.container .card button {
-  position: absolute;
+  width: 49%;
+  height: 95vh;
   cursor: pointer;
-  bottom: 10px;
-  border: none;
-  border-radius: 8px;
-  width: 100px;
-  height: 35px;
+  overflow: hidden;
+}
+.container .marca img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.6);
+  border-radius: 5px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.container .marca div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.container .marca div h2 {
+  color: #fffff1;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+}
+.container .marca div button {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #eceff1;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #eceff1;
+  font-size: 1.3rem;
+}
+.container .marca:hover img {
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=Marcas.module.css.map */

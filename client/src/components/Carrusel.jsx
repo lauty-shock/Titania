@@ -1,7 +1,7 @@
 import { useState } from "react";
-import css from "../css/Carrusel/Carrusel.module.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
+import css from "../css/Carrusel/Carrusel.module.css";
 import Card from "./Card";
 
 export default function Carrusel({ product, title }) {

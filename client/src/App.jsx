@@ -1,6 +1,7 @@
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import Carrusel from "./components/Carrusel";
+import Marcas from "./components/Marcas";
 
 function App() {
   const zapas = [
@@ -143,6 +144,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Landing />
+      <Marcas />
       <Carrusel product={zapas} title="PARA HOMBRES" />
       <Carrusel product={zapas} title="PARA MUJERES" />
     </div>

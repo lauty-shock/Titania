@@ -2,44 +2,53 @@
 @import "colors";
 
 .container {
-  @include d-flex($content: center);
+  @include d-flex(row, space-between, center);
   width: 100%;
-  height: 100vh;
-  gap: 17%;
-  padding: 18px 0;
+  padding: 10px 2vw;
+  margin-top: 20px;
 
-  .card {
-    width: 30%;
+  .marca {
+    @include d-flex(row, center, center);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
     position: relative;
-
+    width: 49%;
+    height: 95vh;
+    cursor: pointer;
+    overflow: hidden;
+    
     img {
       width: 100%;
-      height: 98%;
+      height: 100%;
+      filter: brightness(0.6);
+      border-radius: 5px;
+      object-fit: cover;
+      transition: 0.3s;
     }
 
-    h2 {
-      display: inline-block;
-      color: $white;
-      position: relative;
-      margin-bottom: 6px;
-    }
-    h2::before {
-      content: "";
+    div {
+      @include d-flex(column, center, center);
       position: absolute;
-      left: 0;
-      bottom: 2px;
-      width: 100%;
-      height: 2px;
-      background: $white;
+      h2 {
+        @include title-md();
+      }
+
+      button {
+        width: 120px;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid $white2;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: $white2;
+        font-size: 1.3rem;
+      }
     }
-    button {
-      position: absolute;
-      cursor: pointer;
-      bottom: 10px;
-      border: none;
-      border-radius: 8px;
-      width: 100px;
-      height: 35px;
+
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
     }
   }
 }

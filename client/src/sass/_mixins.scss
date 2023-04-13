@@ -21,3 +21,8 @@
   font-family: "Bebas Neue", cursive;
   font-size: 4rem;
 }
+@mixin title-md() {
+  color: $white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+}
