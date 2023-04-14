@@ -1,6 +1,6 @@
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
-import Carrusel from "./components/Carrusel";
+import Slice from "./components/Slice";
 import Marcas from "./components/Marcas";
 import Footer from "./components/Footer";
 
@@ -146,8 +146,8 @@ function App() {
       <Navbar />
       <Landing />
       <Marcas />
-      <Carrusel product={zapas} title="PARA HOMBRES" />
-      <Carrusel product={zapas} title="PARA MUJERES" />
+      <Slice product={zapas} title="PARA HOMBRES" />
+      <Slice product={zapas} title="PARA MUJERES" />
       <Footer />
     </div>
   );

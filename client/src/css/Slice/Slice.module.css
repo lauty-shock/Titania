@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+.container .containerSlice {
+  overflow: hidden;
+  color: #eceff1;
+  position: relative;
+  width: 1200px;
+}
+.container .containerSlice .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+.container .containerSlice .header h1 {
+  color: #fffff1;
+  font-family: "Bebas Neue", cursive;
+  font-size: 4rem;
+}
+.container .containerSlice .header div {
+  display: flex;
+}
+.container .containerSlice .header div button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: #eceff1;
+  font-size: 2.5rem;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.container .containerSlice .containerSliceShow {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5.5%;
+}
+.container .containerSlice .containerSliceShow .slice {
+  transition: 0.3s ease all;
+  z-index: 10;
+  max-height: 500px;
+}
+
+/*# sourceMappingURL=Slice.module.css.map */
