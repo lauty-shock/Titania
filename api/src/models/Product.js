@@ -26,7 +26,7 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       discount: {
-        type: DataTypes.NUMBER,
+        type: DataTypes.BOOLEAN,
       },
       colors: {
         type: DataTypes.ARRAY(DataTypes.JSON),

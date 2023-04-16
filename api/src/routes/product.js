@@ -17,10 +17,6 @@ router.post("/", async (req, res) => {
     req.body;
 
   try {
-    let productCreate = await Product.create({
-      name, price, category, colors, sizes, discount
-    });
-
     if (!name) {
       return res
         .status(400)
@@ -46,6 +42,10 @@ router.post("/", async (req, res) => {
         .status(400)
         .send({ error: "Debe ingresar los talles del producto" });
     }
+
+    let productCreate = await Product.create({
+      name, price, category, colors, sizes, discount
+    });
 
     res.json(productCreate);
   } catch (error) {
