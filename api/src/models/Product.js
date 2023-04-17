@@ -13,6 +13,10 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
+      gender: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
       category: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -22,8 +26,9 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       sizes: {
-        type: DataTypes.ARRAY(DataTypes.STRING),
+        type: DataTypes.ARRAY(DataTypes.JSON),
         allowNull: false,
+        defaultValue: []
       },
       discount: {
         type: DataTypes.BOOLEAN,
