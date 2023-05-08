@@ -1,9 +1,15 @@
 @import "colors";
 
-@mixin d-flex($direction: row, $content: flex-start, $item: stretch) {
+@mixin d-flex(
+  $direction: row,
+  $content: flex-start,
+  $item: stretch,
+  $wrap: nowrap
+) {
   display: flex;
   flex-direction: $direction;
   justify-content: $content;
+  flex-wrap: $wrap;
   align-items: $item;
 }
 
@@ -17,6 +23,16 @@
   cursor: pointer;
 }
 
+@mixin input() {
+  background-color: $dark-gray;
+  border: 1px solid $light-gray;
+  color: $white2;
+  width: 100%;
+  height: 1.5rem;
+  padding-inline: 5px;
+  outline: none;
+}
+
 @mixin title() {
   color: $white;
   font-family: "Bebas Neue", cursive;
@@ -26,4 +42,9 @@
   color: $white;
   font-family: "Bebas Neue", cursive;
   font-size: 3rem;
+}
+@mixin title-s() {
+  color: $white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
 }

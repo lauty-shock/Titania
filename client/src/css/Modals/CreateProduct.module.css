@@ -1,0 +1,231 @@
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+}
+.center .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 1000px;
+  height: 82vh;
+}
+.center .container .containerImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: rgb(41, 41, 41);
+  width: 55%;
+  height: 100%;
+  padding: 10px 20px 20px;
+}
+.center .container .containerImages h1 {
+  color: #fffff1;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+}
+.center .container .containerImages .error {
+  color: #cc0911;
+  padding: 0;
+  background-color: transparent;
+}
+.center .container .containerImages .containerInputsImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  height: 422px;
+  gap: 13px;
+}
+.center .container .containerImages .containerInputsImg .containerimg {
+  width: 245px;
+  height: 204px;
+  background-color: #eceff1;
+  position: relative;
+  display: flex;
+}
+.center .container .containerImages .containerInputsImg .containerimg img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.center .container .containerImages .containerInputsImg .containerimg .noImage {
+  margin: auto;
+  color: rgba(170, 170, 170, 0.3);
+  font-size: 208px;
+}
+.center .container .containerImages .containerInputsImg .containerimg .addImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.center .container .containerImages .containerInputsImg .containerimg .addImage div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+.center .container .containerImages .containerInputsImg .containerimg .addImage button,
+.center .container .containerImages .containerInputsImg .containerimg .addImage input {
+  height: 24px;
+  width: 130px;
+}
+.center .container .containerImages .containerInputsImg .containerimg .deleteImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+.center .container .containerImages .containerInputsImg .containerimg .deleteImage button {
+  font-size: 1.5rem;
+  color: #eceff1;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+.center .container .containerImages .containerInputsImg .containerimg .deleteImage button:hover {
+  background-color: #cc0911;
+}
+.center .container .containerData {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  background-color: #444444;
+  width: 45%;
+  height: 100%;
+  padding: 10px 20px;
+}
+.center .container .containerData h1 {
+  color: #fffff1;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.center .container .containerData .containerInputsData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.center .container .containerData .containerInputsData div {
+  width: 49%;
+  height: 70px;
+}
+.center .container .containerData .containerInputsData div:nth-child(1) {
+  width: 100%;
+  margin: 0;
+}
+.center .container .containerData .containerInputsData div:nth-child(6), .center .container .containerData .containerInputsData div:nth-child(7) {
+  width: 47%;
+  height: auto;
+}
+.center .container .containerData .containerInputsData div:nth-child(8) {
+  height: auto;
+  width: 18px;
+}
+.center .container .containerData .containerInputsData div:nth-child(9) {
+  display: flex;
+  gap: 3px;
+  width: 100%;
+  margin-top: 0.5rem;
+  height: auto;
+}
+.center .container .containerData .containerInputsData div:nth-child(10) {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.center .container .containerData .containerInputsData div:nth-child(10) button {
+  width: 150px;
+  height: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+}
+.center .container .containerData .containerInputsData div label {
+  color: #eceff1;
+}
+.center .container .containerData .containerInputsData div input {
+  background-color: rgb(41, 41, 41);
+  border: 1px solid rgb(158, 158, 158);
+  color: #eceff1;
+  width: 100%;
+  height: 1.5rem;
+  padding-inline: 5px;
+  outline: none;
+  margin-bottom: 3px;
+}
+.center .container .containerData .containerInputsData div select {
+  background-color: rgb(41, 41, 41);
+  border: 1px solid rgb(158, 158, 158);
+  color: #eceff1;
+  width: 100%;
+  height: 1.5rem;
+  padding-inline: 5px;
+  outline: none;
+  padding: 0;
+}
+.center .container .containerData .containerInputsData div .size {
+  background-color: rgb(41, 41, 41);
+  color: #eceff1;
+  padding: 2px 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.center .container .containerData .containerInputsData div .size:hover {
+  background-color: #cc0911;
+}
+.center .container .containerData .containerInputsData div .enter {
+  border: none;
+  background-color: #eceff1;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 19px;
+  height: 1.5rem;
+}
+.center .container .containerData .containerInputsData div .error {
+  color: #cc0911;
+  padding: 0;
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=CreateProduct.module.css.map */
