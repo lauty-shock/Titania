@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  const { name, price, category, colors, sizes, discount } =
+  const { name, price, category, colors, sizes, discount, gender } =
     req.body;
 
   try {
@@ -42,9 +42,14 @@ router.post("/", async (req, res) => {
         .status(400)
         .send({ error: "Debe ingresar los talles del producto" });
     }
+    if (!gender) {
+      return res
+        .status(400)
+        .send({ error: "Debe seleccionar un genero para el producto" });
+    }
 
     let productCreate = await Product.create({
-      name, price, category, colors, sizes, discount
+      name, price, category, colors, sizes, discount, gender
     });
 
     res.json(productCreate);

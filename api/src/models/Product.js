@@ -31,10 +31,10 @@ module.exports = (sequelize) => {
         defaultValue: []
       },
       discount: {
-        type: DataTypes.BOOLEAN,
+        type: DataTypes.FLOAT,
       },
       colors: {
-        type: DataTypes.ARRAY(DataTypes.JSON),
+        type: DataTypes.ARRAY(DataTypes.STRING),
         allowNull: true,
         defaultValue: []
       },
